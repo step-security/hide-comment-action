@@ -93,20 +93,3 @@ jobs:
         uses: ./
         with:
           issue-number: ${{ github.event.pull_request.number }}
-
-  generate:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: write
-      pull-requests: write
-    steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version: 20
-      - run: npm i
-      - run: npm run lint --fix
-      - run: npm run format
-      - run: npm run graphql-codegen
-      - uses: int128/update-generated-files-action@f6dc44e35ce252932e9018f1c38d1e2a4ff80e14 # v2.60.0

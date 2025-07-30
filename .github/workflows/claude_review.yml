@@ -11,7 +11,7 @@ jobs:
         anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
       
 permissions:
-  contents: write
+  contents: read
   pull-requests: write
   packages: read
   issues: write
