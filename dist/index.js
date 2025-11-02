@@ -36357,13 +36357,6 @@ __nccwpck_require__.d(common_utils_namespaceObject, {
 
 // EXTERNAL MODULE: ./node_modules/@actions/core/lib/core.js
 var core = __nccwpck_require__(7484);
-// EXTERNAL MODULE: ./node_modules/@actions/github/lib/github.js
-var github = __nccwpck_require__(3228);
-;// CONCATENATED MODULE: ./src/github.ts
-
-const getOctokit = (token) => github.getOctokit(token);
-const context = github.context;
-
 ;// CONCATENATED MODULE: ./src/filter.ts
 
 const filterComments = (q, inputs) => {
@@ -36402,6 +36395,13 @@ const toMinimize = (c, inputs) => {
     }
     return false;
 };
+
+// EXTERNAL MODULE: ./node_modules/@actions/github/lib/github.js
+var github = __nccwpck_require__(3228);
+;// CONCATENATED MODULE: ./src/github.ts
+
+const getOctokit = (token) => github.getOctokit(token);
+const context = github.context;
 
 ;// CONCATENATED MODULE: ./src/queries/comments.ts
 const query = /* GraphQL */ `
@@ -41861,7 +41861,7 @@ const issueNumber = (s) => {
     if (!s) {
         return undefined;
     }
-    const n = parseInt(s);
+    const n = parseInt(s, 10);
     if (Number.isNaN(n)) {
         throw new Error('issue-number is an invalid number');
     }
