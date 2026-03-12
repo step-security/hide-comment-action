@@ -1,3 +1,5 @@
+[![StepSecurity Maintained Action](https://raw.githubusercontent.com/step-security/maintained-actions-assets/main/assets/maintained-action-banner.png)](https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions)
+
 # hide-comment-action [![ts](https://github.com/step-security/hide-comment-action/actions/workflows/ts.yaml/badge.svg)](https://github.com/step-security/hide-comment-action/actions/workflows/ts.yaml)
 
 This is an action to hide (minimize) comments in a pull request.
