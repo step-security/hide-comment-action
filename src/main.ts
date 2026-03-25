@@ -1,8 +1,8 @@
 import * as core from '@actions/core'
 import { getContext, getOctokit } from './github.js'
 import { run } from './run.js'
-import * as github from "@actions/github"
 import axios, { isAxiosError } from 'axios'
+import { existsSync, readFileSync } from "fs";
 
 const main = async (): Promise<void> => {
   await validateSubscription()
@@ -38,7 +38,13 @@ const issueNumber = (s: string): number | undefined => {
 }
 
 async function validateSubscription() {
-  const repoPrivate = github.context?.payload?.repository?.private;
+  let repoPrivate;
+  const eventPath = process.env.GITHUB_EVENT_PATH;
+  if (eventPath && existsSync(eventPath)) {
+    const payload = JSON.parse(readFileSync(eventPath, "utf8"));
+    repoPrivate = payload?.repository?.private;
+  }
+
   const upstream = 'int128/hide-comment-action';
   const action = process.env.GITHUB_ACTION_REPOSITORY;
   const docsUrl = 'https://docs.stepsecurity.io/actions/stepsecurity-maintained-actions';
