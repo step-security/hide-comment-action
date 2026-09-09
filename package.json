@@ -3,30 +3,30 @@
   "scripts": {
     "build": "ncc build --source-map --license licenses.txt src/main.ts",
     "test": "vitest",
-    "graphql-codegen": "graphql-codegen --config graphql-codegen.ts",
+    "graphql-codegen": "graphql-codegen --config graphql.config.ts",
     "check": "biome migrate --write && biome check --fix"
   },
   "type": "module",
   "dependencies": {
-    "@actions/core": "2.0.1",
+    "@actions/core": "3.0.1",
     "@octokit/action": "^8.0.4",
-    "@octokit/plugin-retry": "8.0.3",
-    "axios": "^1.11.0",
-    "graphql": "16.11.0"
+    "@octokit/plugin-retry": "8.1.1",
+    "axios": "^1.20.0",
+    "graphql": "^16.14.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.3.2",
-    "@graphql-codegen/cli": "6.0.1",
-    "@graphql-codegen/import-types-preset": "4.0.0",
-    "@graphql-codegen/typescript": "5.0.2",
-    "@graphql-codegen/typescript-operations": "5.0.2",
+    "@biomejs/biome": "^2.5.7",
+    "@graphql-codegen/cli": "^6.3.1",
+    "@graphql-codegen/import-types-preset": "^4.0.1",
+    "@graphql-codegen/typescript": "^5.0.10",
+    "@graphql-codegen/typescript-operations": "^5.1.0",
     "@octokit/graphql-schema": "15.26.0",
     "@octokit/webhooks-types": "^7.6.1",
-    "@tsconfig/node24": "24.0.0",
-    "@types/node": "24.0.0",
-    "@vercel/ncc": "0.38.3",
+    "@tsconfig/node24": "^24.0.4",
+    "@types/node": "^24.13.3",
+    "@vercel/ncc": "^0.45.0",
     "js-yaml": "4.1.1",
-    "typescript": "5.8.3",
-    "vitest": "4.0.3"
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
   }
 }
