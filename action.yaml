@@ -1,4 +1,5 @@
 name: hide-comment
+author: step-security
 description: Hide comment(s) of a pull request or issue
 
 inputs:

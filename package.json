@@ -15,18 +15,33 @@
     "graphql": "^16.14.2"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.7",
+    "@biomejs/biome": "2.5.14",
     "@graphql-codegen/cli": "^6.3.1",
     "@graphql-codegen/import-types-preset": "^4.0.1",
     "@graphql-codegen/typescript": "^5.0.10",
     "@graphql-codegen/typescript-operations": "^5.1.0",
     "@octokit/graphql-schema": "15.26.0",
     "@octokit/webhooks-types": "^7.6.1",
-    "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^24.13.3",
+    "@tsconfig/node24": "24.0.5",
+    "@types/node": "24.13.6",
     "@vercel/ncc": "^0.45.0",
     "js-yaml": "4.3.2",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.10"
+    "vitest": "5.0.2"
+  },
+  "name": "@step-security/hide-comment-action",
+  "author": "step-security",
+  "publisher": "step-security",
+  "homepage": "https://github.com/step-security/hide-comment-action#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/step-security/hide-comment-action.git"
+  },
+  "bugs": {
+    "url": "https://github.com/step-security/hide-comment-action/issues"
+  },
+  "engines": {
+    "node": ">=24",
+    "npm": ">=11"
   }
 }
