@@ -1,3 +1,7 @@
 [[IgnoredVulns]]
-id = "GHSA-g9mf-h72j-4rw9"
-reason = "Not exploitable in production: undici's fetch() API is not used by this action; HTTP calls go through @octokit/rest and axios which use their own HTTP clients."
+id = "GHSA-vfj7-8cjw-p6xm"
+reason = "braces is a dev dependency and is not used at runtime"
+
+[[IgnoredVulns]]
+id = "GHSA-7mx3-vvmw-hjmv"
+reason = "@graphql-tools/utils is a dev dependency (graphql-codegen) and is not used at runtime"
