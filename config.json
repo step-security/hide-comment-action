@@ -5,8 +5,8 @@
   "action_type": "node",
   "upstream": {
     "repository": "int128/hide-comment-action",
-    "synced_tag": "v1.76.0",
-    "synced_commit": "632042d5538b521f3ad07edb33cc3bae90ed9d23",
+    "synced_tag": "v1.79.0",
+    "synced_commit": "a06f2c83c4bf21f9b9f8b87b3bb88cb769aa5e74",
     "archived": false
   },
   "build": {
