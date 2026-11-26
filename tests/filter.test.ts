@@ -10,6 +10,7 @@ describe('filter to minimize', () => {
           id: `id`,
           body: `body`,
           isMinimized: false,
+          author: null,
           url: `https://www.example.com`,
         },
         {
@@ -88,6 +89,7 @@ describe('filter to minimize', () => {
           id: `id`,
           body: `<!-- head -->body`,
           isMinimized: false,
+          author: null,
           url: `https://www.example.com`,
         },
         {
@@ -106,6 +108,7 @@ describe('filter to minimize', () => {
           id: `id`,
           body: `body`,
           isMinimized: false,
+          author: null,
           url: `https://www.example.com`,
         },
         {
@@ -125,6 +128,7 @@ describe('filter to minimize', () => {
           id: `id`,
           body: `body<!-- tail -->`,
           isMinimized: false,
+          author: null,
           url: `https://www.example.com`,
         },
         {
@@ -143,6 +147,7 @@ describe('filter to minimize', () => {
           id: `id`,
           body: `body`,
           isMinimized: false,
+          author: null,
           url: `https://www.example.com`,
         },
         {
@@ -162,6 +167,7 @@ describe('filter to minimize', () => {
           id: `id`,
           body: `foo<!-- mark -->bar`,
           isMinimized: false,
+          author: null,
           url: `https://www.example.com`,
         },
         {
@@ -180,6 +186,7 @@ describe('filter to minimize', () => {
           id: `id`,
           body: `foo<!-- mark -->bar`,
           isMinimized: false,
+          author: null,
           url: `https://www.example.com`,
         },
         {

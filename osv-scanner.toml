@@ -1,7 +1,3 @@
 [[IgnoredVulns]]
-id = "GHSA-vfj7-8cjw-p6xm"
-reason = "braces is a dev dependency and is not used at runtime"
-
-[[IgnoredVulns]]
-id = "GHSA-7mx3-vvmw-hjmv"
-reason = "@graphql-tools/utils is a dev dependency (graphql-codegen) and is not used at runtime"
+id = "GHSA-g3hv-75wg-m249"
+reason = "minimatch is a transitive dev dependency of graphql-config (graphql-codegen) and is not used at runtime; no fixed version is reachable because the latest graphql-config still requires minimatch ^10"
