@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.5.14/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.6.7/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -19,6 +19,10 @@
     }
   },
   "files": {
+<<<<<<< 188a5a581167824ab4123ddaa1495ecd1b30cdaf
     "includes": ["**", "!src/generated", "!dist"]
+=======
+    "includes": ["**", "!src/generated", "!.github/workflows"]
+>>>>>>> ab37199c71a89c1f096e3d90fa18c422cd0ee5e4
   }
 }
